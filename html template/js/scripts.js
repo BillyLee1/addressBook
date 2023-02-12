@@ -1,5 +1,6 @@
 function AddressBook() {
   this.contacts = {};
+  this.currentId = 0;
 }
 
 AddressBook.prototype.assignId = function() {
@@ -9,7 +10,8 @@ AddressBook.prototype.assignId = function() {
 
 
 AddressBook.prototype.addContact = function(contact) {
-  this.contacts[contact.firstName] = contact;
+  contact.id = this.assignId();
+  this.contacts[contact.id] = contact;
 };
 
 function Contact(firstName, lastName, phoneNumber) {
