@@ -52,3 +52,4 @@ let contact3 = new Contact("Gracie", "Hopping", "503-555-2222");
 addressBook.addContact(contact);
 addressBook.addContact(contact2);
 addressBook.addContact(contact3);
+addressBook.addContact(contact3);
